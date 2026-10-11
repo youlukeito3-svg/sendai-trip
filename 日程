@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🍁 仙台＆秋保温泉 2泊3日旅行プラン</title>
+<style>
+  :root {
+    --primary-color: #c0392b;
+    --secondary-color: #d35400;
+    --accent-color: #e67e22;
+    --bg-color: #fcf8f2;
+    --card-bg: #ffffff;
+    --text-color: #2c3e50;
+    --border-color: #e2d7c7;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 16px;
+    line-height: 1.6;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  header {
+    text-align: center;
+    padding: 28px 16px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 15px rgba(192, 57, 43, 0.2);
+  }
+
+  header h1 {
+    margin: 0 0 8px 0;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+  }
+
+  header p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.95;
+  }
+
+  .info-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 18px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  }
+
+  .info-card h2 {
+    margin-top: 0;
+    font-size: 17px;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 8px;
+  }
+
+  .shinkansen-box {
+    background: #f8f9fa;
+    border-left: 4px solid #2980b9;
+    padding: 10px 14px;
+    margin: 8px 0;
+    border-radius: 0 8px 8px 0;
+    font-size: 14px;
+  }
+
+  .day-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    border: 1px solid var(--border-color);
+  }
+
+  .day-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    border-bottom: 2px dashed var(--border-color);
+    padding-bottom: 12px;
+  }
+
+  .day-badge {
+    background: var(--primary-color);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .timeline {
+    position: relative;
+    padding-left: 20px;
+    border-left: 2px solid var(--border-color);
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 24px;
+  }
+
+  .timeline-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -26px;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    background: var(--accent-color);
+    border-radius: 50%;
+  }
+
+  .time {
+    font-weight: bold;
+    color: var(--secondary-color);
+    font-size: 14px;
+  }
+
+  .spot-name {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 4px 0;
+  }
+
+  .description {
+    font-size: 13px;
+    color: #555;
+  }
+
+  .todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .todo-list li {
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .todo-list li:last-child {
+    border-bottom: none;
+  }
+
+  .checkbox {
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 4px;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>🍁 仙台＆秋保温泉 2泊3日旅日程</h1>
+    <p>2026年10月24日（土）〜 10月26日（月）</p>
+  </header>
+
+  <!-- 基本情報 -->
+  <div class="info-card">
+    <h2>🚄 確定新幹線＆宿</h2>
+    <div class="shinkansen-box">
+      <strong>【行き】10/24（土）やまびこ127号</strong><br>
+      大宮 08:32発 ➔ 仙台 10:11着
+    </div>
+    <div class="shinkansen-box">
+      <strong>【帰り】10/26（月）やまびこ216号</strong><br>
+      仙台 16:01発 ➔ 大宮 17:51着
+    </div>
+    <div style="margin-top: 12px; font-size: 14px;">
+      <strong>🏨 宿泊：</strong> 秋保グランドホテル<br>
+      <span style="font-size: 12px; color: #666;">（10/25 15:00〜19:00 チェックイン）</span>
+    </div>
+  </div>
+
+  <!-- Day 1 -->
+  <div class="day-card">
+    <div class="day-title">
+      <span class="day-badge">Day 1</span>
+      <span>10/24（土）松島・馬の背＆牛タン</span>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="time">08:32 - 10:11</div>
+        <div class="spot-name">大宮駅 ➔ 仙台駅</div>
+        <div class="description">新幹線で仙台へ移動（JR仙石線へ乗り換え）</div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">10:33 - 11:10</div>
+        <div class="spot-name">仙台駅 ➔ 陸前浜田駅</div>
+        <div class="description">JR仙石線で移動、下車後徒歩約20分</div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">11:30 - 12:30</div>
+        <div class="spot-name">馬の背 散策</div>
+        <div class="description">天然の桟橋のような隠れた風光明媚スポットを散策</div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">13:00 - 15:30</div>
+        <div class="spot-name">松島海岸エリア＆観光船</div>
+        <div class="description">海鮮ランチ、島巡り遊覧船乗船、瑞巌寺や五大堂散策</div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">17:30 - 20:00</div>
+        <div class="spot-name">仙台市内で牛タンディナー</div>
+        <div class="description">名物の牛タンを満喫（事前のテーブル予約推奨）</div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">20:30〜</div>
+        <div class="spot-name">仙台市内のホテルへチェックイン</div>
+        <div class="description">明日に備えてゆっくり休憩</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 2 -->
+  <div class="day-card">
+    <div class="day-title">
+      <span class="day-badge">Day 2</span>
+      <span>10/25（日）瑞鳳殿・秋保大滝＆磊々峡</span>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="time">10:00 - 12:00</div>
+        <div class="spot-name">瑞鳳殿 散策</div>
+        <div class="description">豪華絢爛な伊達政宗公の廟所と綺麗な紅葉を鑑賞</div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">13:06 - 13:58</div>
+        <div class="spot-name">仙台駅 ➔ 秋保大滝（路線バス）</div>
+        <div class="description">仙台駅西口8番乗り場からタケヤ交通バスで移動</div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">13:58 - 14:50</div>
+        <div class="spot-name">秋保大滝 鑑賞</div>
+        <div class="description">幅6m・落差55mの大瀑布と色鮮やかな紅葉の絶景</div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">15:20</div>
+        <div class="spot-name">秋保グランドホテル チェックイン</div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">15:40 - 16:30</div>
+        <div class="spot-name">磊々峡 散策</div>
+        <div class="description">ホテル前の散策路を歩き「覗橋のハート」や奇岩を見学</div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">16:30〜</div>
+        <div class="spot-name">温泉＆夕食（ビュッフェ）</div>
+        <div class="description">露天風呂で長旅の疲れを癒やす</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 3 -->
+  <div class="day-card">
+    <div class="day-title">
+      <span class="day-badge">Day 3</span>
+      <span>10/26（月）水族館＆お土産購入</span>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="time">10:30 - 11:10</div>
+        <div class="spot-name">ホテル ➔ 仙台駅（送迎バス）</div>
+        <div class="description">無料送迎バス（要事前予約）で仙台駅へ戻る</div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">12:07 - 14:30</div>
+        <div class="spot-name">仙台うみの杜水族館</div>
+        <div class="description">大水槽やイルカショーを見学＆館内でランチ</div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">15:12 - 15:50</div>
+        <div class="spot-name">仙台駅でお買い物</div>
+        <div class="description">ずんだ餅や笹かまぼこなどのお土産を購入</div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">16:01 - 17:51</div>
+        <div class="spot-name">仙台駅 ➔ 大宮駅</div>
+        <div class="description">新幹線やまびこ216号で帰路へ</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ToDo -->
+  <div class="info-card">
+    <h2>📌 事前メモ（ToDo）</h2>
+    <ul class="todo-list">
+      <li><span class="checkbox"></span> 1日目夜の牛タン屋さんの予約</li>
+      <li><span class="checkbox"></span> 3日目朝10:30発「ホテル無料送迎バス」の予約</li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
